@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to bottom,
+    #87ceeb,
+    #7fff00
+  ); /* Fondo de día soleado con plantas */
+}
+
+#game-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden; /* Evitar que los elementos salgan del contenedor */
+}
+
+#maca {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px; /* Ajusta el tamaño del personaje según tus necesidades */
+}
+
+#score,
+#time {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #333; /* Color de texto oscuro */
+}
+
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+  color: #333; /* Color de texto oscuro */
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.gift {
+  position: absolute;
+  font-size: 24px;
+}
